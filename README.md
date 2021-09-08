@@ -1,2 +1,2 @@
-# MultimodelMixup_MMT
- Leveraging Image and Text with MultimodelMixup for Multi-model Neural Machine Translation
+# DLMulMix
+ Dual-level Interactive Multimodal-Mixup Encoder for Multi-modal Neural Machine Translation
