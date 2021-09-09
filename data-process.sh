@@ -2,7 +2,7 @@
 
 python3 preprocess.py \
   --source-lang en \
-  --target-lang fr \
+  --target-lang de \
   --trainpref data-raw/train.bpe \
   --validpref data-raw/val.bpe \
   --testpref data-raw/test_2016_flickr.bpe \
