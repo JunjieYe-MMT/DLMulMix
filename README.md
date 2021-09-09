@@ -16,5 +16,6 @@ English, German, French use BPE participle separately.
 ## DLMulMix coder Quickstart
 Step 1: bash data-preprocess.sh  
 step 2: bash data-train.sh  
-step 3: bash data-checkpoints.py  
-step 4: bash data-generate.py
+step 3: bash data-checkpoints.sh  
+step 4: bash data-generate.sh  
+
