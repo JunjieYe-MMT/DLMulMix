@@ -20,4 +20,5 @@ step 2: bash data-train.sh
 step 3: bash data-checkpoints.sh  
 step 4: bash data-generate.sh  
 
-Our model need to train 60 batches.
+Our model need to train 60 batches.  
+The data-bin folder is the text data processed by bash data-preprocess.sh. Add the extracted image features here to start training the model.
