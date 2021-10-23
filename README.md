@@ -22,3 +22,4 @@ step 4: bash data-generate.sh
 
 Our model need to train 60 batches.  
 The data-bin folder is the text data processed by bash data-preprocess.sh. Add the extracted image features here to start training the model.
+![41 77](https://user-images.githubusercontent.com/90311581/138554952-face46fd-12e3-4cfb-ba3a-e9babd046777.jpg)
