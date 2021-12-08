@@ -152,12 +152,6 @@ class TransformerEncoderLayer(nn.Module):
 
         residual = x
         
-     #########################################
-     ############  pre-mixup   ###############
-     ##########################################
-#        if lay_idx == 0 :
-#            x_fuse = self.multimodel_mix(x, grid_img_features, batch_len)
-#            x = x_fuse
         
 
         if self.normalize_before:
