@@ -489,17 +489,6 @@ class TransformerEncoder(FairseqEncoder):
         x = torch.cat([x,grid_img_features,x],dim=0)
 
 
-        # grid_img_features = torch.zeros_like(grid_img_features).type_as(grid_img_features)
-    ################  image to txt   ############    first mixup
-        # pseudo_img_features = grid_img_features[torch.LongTensor(np.random.randint(0,grid_img_features.size(0),x.size(0)))]
-        # alpha = torch.tensor([random.betavariate(150,150)for _ in range(x.size(1))]).unsqueeze(0).unsqueeze(-1).type_as(x)
-        # mixed_x = alpha * x + (1-alpha) * pseudo_img_features
-        # x = torch.cat([x, grid_img_features, mixed_x], dim=0)
-    ################  txt to  image  #############
-        # pseudo_text_features = x[torch.LongTensor(np.random.randint(0,x.size(0),grid_img_features.size(0)))]
-        # alpha = torch.tensor([random.betavariate(150,150)for _ in range(x.size(1))]).unsqueeze(0).unsqueeze(-1).type_as(x)
-        # mixed_img = alpha * grid_img_features + (1-alpha) * pseudo_text_features
-        # x = torch.cat([x, grid_img_features, mixed_img], dim=0)
 
         batch_len = src_lengths[0].item()
 
