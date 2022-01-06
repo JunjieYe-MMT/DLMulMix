@@ -124,7 +124,7 @@ class TransformerEncoderLayer(nn.Module):
     def multimodel_mix(self, x, img, batch_len):
         #####  stra visual to textual  #########
         pseudo_features = img[torch.LongTensor(np.random.randint(0,img.size(0),batch_len))]
-        alpha = torch.tensor([random.betavariate(150,150)for _ in range(x.size(1))]).unsqueeze(0).unsqueeze(-1).type_as(x)
+        alpha = torch.tensor([random.betavariate(0.4,0.4)for _ in range(x.size(1))]).unsqueeze(0).unsqueeze(-1).type_as(x)
         mixed_x = alpha * x[:batch_len] + (1-alpha) * pseudo_features
         x = torch.cat([x[:batch_len], img, mixed_x], dim=0)
 
@@ -180,12 +180,12 @@ class TransformerEncoderLayer(nn.Module):
         residual = x
 
 
-        ######### 门控机制  ###########
+        ######### gated  ###########
         region_img_features = self.gating(x[:batch_len], region_img_features)
 
 
 
-        #########  拼接region和grid   ##############
+        #########  region||grid   ##############
         region_img_features = torch.cat([grid_img_features,region_img_features],dim=0)
 
 
