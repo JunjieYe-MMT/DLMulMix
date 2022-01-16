@@ -202,10 +202,7 @@ class TransformerEncoderLayer(nn.Module):
         )
         region_grid_img_features = F.dropout(region_grid_img_features, p=self.dropout, training=self.training)
 
-        ###############  pre mixup text features and region_img_features  ########
-#        if lay_idx <= 2:
-#            x = self.multimodel_mix(x, region_grid_img_features, batch_len)
-#        residual = x
+
 
         ###############  cross attention img_features and txt features  ##########
         region_grid_x_features, _ = self.self_attn_cross_img_x(
@@ -240,8 +237,7 @@ class TransformerEncoderLayer(nn.Module):
         x = residual + x
         if not self.normalize_before:
             x = self.final_layer_norm(x)
-        # x = x[:batch_len]
-#        return x[:batch_len + 49 + residual_region.size(0)]
+
         return x
 
 
