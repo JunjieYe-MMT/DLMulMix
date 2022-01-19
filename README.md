@@ -25,4 +25,9 @@ The data-bin folder is the text data processed by bash data-preprocess.sh. Add t
 ![41 77](https://user-images.githubusercontent.com/90311581/138554952-face46fd-12e3-4cfb-ba3a-e9babd046777.jpg)
 
 ## Reproduce Existing Methods  
-Doubly-ATT. [fairseq-Doubly-att.zip](https://github.com/DLMulMix/DLMulMix/files/7895802/fairseq-Doubly-att.zip)
+Doubly-ATT. [fairseq-Doubly-att.zip](https://github.com/DLMulMix/DLMulMix/files/7895802/fairseq-Doubly-att.zip)  
+
+Multimodal Transformer. 
+[fairseq-Multimodal_Transformer.zip](https://github.com/DLMulMix/DLMulMix/files/7895817/fairseq-Multimodal_Transformer.zip)
+
+Graph-based MMT. [fairseq-Graph-based.zip](https://github.com/DLMulMix/DLMulMix/files/7895821/fairseq-Graph-based.zip)
