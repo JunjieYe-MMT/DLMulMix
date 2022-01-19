@@ -14,7 +14,7 @@ The data-raw floder above is the data processed by BPE.
 English, German, French use BPE participle separately.   
 -s 10000  \
 --vocabulary-threshold 1 \
-## DLMulMix coder Quickstart
+## DLMulMix Coder Quickstart
 Step 1: bash data-preprocess.sh  
 step 2: bash data-train.sh  
 step 3: bash data-checkpoints.sh  
@@ -31,3 +31,16 @@ Multimodal Transformer.
 [fairseq-Multimodal_Transformer.zip](https://github.com/DLMulMix/DLMulMix/files/7895817/fairseq-Multimodal_Transformer.zip)
 
 Graph-based MMT. [fairseq-Graph-based.zip](https://github.com/DLMulMix/DLMulMix/files/7895821/fairseq-Graph-based.zip)
+
+## Code for Ablation Studies of Image Features.
+Remove grid features. [fairseq-remove-grid.zip](https://github.com/DLMulMix/DLMulMix/files/7895863/fairseq-remove-grid.zip)  
+
+Remove regional features. [fairseq-remove-region.zip](https://github.com/DLMulMix/DLMulMix/files/7895869/fairseq-remove-region.zip)
+
+Regional features replace with random features. [fairseq_region_random.zip](https://github.com/DLMulMix/DLMulMix/files/7895871/fairseq_region_random.zip)
+
+Grid features replace with random features. 
+[fairseq_grid_random.zip](https://github.com/DLMulMix/DLMulMix/files/7895878/fairseq_grid_random.zip)
+
+
+
